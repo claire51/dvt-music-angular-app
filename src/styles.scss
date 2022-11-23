@@ -1,12 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import "variable.scss";
+
 body{
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 24px;
-  color: #333;
+  font-size: $font-size;
+  color: $font-color;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $background-color;
 }
+
 .toolbar {
   position: absolute;
   top: 0;
@@ -15,8 +19,8 @@ body{
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: #51087E;
-  color: white;
+  background-color: $background-secondary-color;
+  color: $font-color;
   font-weight: 600;
 }
 
