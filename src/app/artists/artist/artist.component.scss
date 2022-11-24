@@ -1,0 +1,41 @@
+@import '../../../variable';
+
+.artist-card {
+  width: 295px;
+  margin: 0px 5px 10px 5px;
+
+  a {
+    text-decoration: none;
+  }
+
+  .artist-image {
+    img {
+      width: 100%;
+    }
+  }
+
+  h6 {
+    color: $font-color-secondary;
+    margin: 0px;
+  }
+
+  h3 {
+    color: $font-color-secondary;
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+.artist-card:hover {
+  background-color: $background-tertiary-color;
+  filter: grayscale(100%);
+
+  h6 {
+    color: lighten($font-color-secondary, 80% );
+    padding-left: 10px;
+  }
+
+  h3 {
+    color: lighten($font-color-secondary, 80% );
+    padding-left: 20px;
+  }
+}

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Artist} from '../../model/artist';
 
 @Component({
   selector: 'app-artist',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtistComponent implements OnInit {
 
+  @Input()
+  artist!: Artist;
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

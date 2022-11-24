@@ -1,0 +1,21 @@
+<ng-container *ngIf="artist; then artistLoaded; else notArtistLoaded">
+</ng-container>
+
+<ng-template #artistLoaded>
+  <div class="artist-details-card">
+
+    <div class="artist-details-image"
+         style="background-image:url({{artist?.picture_xl}}); background-repeat: no-repeat; background-size: 100%; background-position: 40% 30%;">
+      <h1>{{artist?.name}}</h1>
+      <h2>{{artist.nb_fan | fanFormatter}}</h2>
+    </div>
+    <app-tracklist class="artist-details-top-tracks"></app-tracklist>
+  </div>
+
+  <app-album [albumArtist]="artist"></app-album>
+
+</ng-template>
+
+<ng-template #notArtistLoaded>
+  <app-loading></app-loading>
+</ng-template>

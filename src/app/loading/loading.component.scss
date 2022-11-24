@@ -1,0 +1,14 @@
+@import '../../variable';
+
+#loading-gif {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: $loading-color;
+  img {
+    width: 300px;
+    position: relative;
+    left: 2.5%;
+    top: 2.5%;
+  }
+}

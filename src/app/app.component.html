@@ -1,9 +1,16 @@
 <div class="toolbar" role="banner">
+  <a [routerLink]="['/']">
   <img
     width="100"
     alt="Angular Logo"
     src="../assets/logo/music.png"
   />
+  </a>
   <span>Deezer APP</span>
+
 </div>
-<router-outlet></router-outlet>
+<div class="content" role="main">
+  <router-outlet></router-outlet>
+</div>
+
+

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 107.0.0.0 (Linux x86_64)" package="unit" timestamp="2022-11-24T12:32:44" id="0" hostname="kelvin-ThinkPad-X1-Extreme" tests="11" errors="0" failures="1" time="0.054">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"/>
+  </properties>
+  <testcase name="ArtistService should be created" time="0.054" classname="unit.ArtistService">
+    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[ArtistService -&gt; BaseHttpServiceService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ArtistService', 'BaseHttpServiceService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[ArtistService -&gt; BaseHttpServiceService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11102:1)
+    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
+    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
+    at injectInjectorOnly (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4776:1)
+    at ɵɵinject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4780:1)
+    at Object.BaseHttpServiceService_Factory [as factory] (ng:///BaseHttpServiceService/ɵfac.js:4:50)
+    at R3Injector.hydrate (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11438:1)
+    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11258:1)
+    at injectInjectorOnly (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4776:1)
+    at ɵɵinject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4780:1)
+</failure>
+    <failure type="">Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/shared/services/artist.service.spec.ts:14:21)
+    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
+    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
+</failure>
+  </testcase>
+  <testcase name="TracklistComponent should create" time="0" classname="unit.TracklistComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="LoadingComponent should create" time="0" classname="unit.LoadingComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistsComponent should create" time="0" classname="unit.ArtistsComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="TrackComponent should create" time="0" classname="unit.TrackComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="AppComponent should render title" time="0" classname="unit.AppComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="AppComponent should have as title 'musicdb-app-angular'" time="0" classname="unit.AppComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="AppComponent should create the app" time="0" classname="unit.AppComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistDetailComponent should create" time="0" classname="unit.ArtistDetailComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistComponent should create" time="0" classname="unit.ArtistComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="AlbumComponent should create" time="0" classname="unit.AlbumComponent">
+    <skipped/>
+  </testcase>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

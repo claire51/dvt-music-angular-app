@@ -1,31 +1,20 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import {ArtistsComponent} from './artists/artists.component';
-import {ArtistDetailComponent} from './artist-detail/artist-detail.component';
-import {AlbumComponent} from './album/album.component';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'artists',
-    component: ArtistsComponent
-  },
-  {
-    path: 'album',
-    component: AlbumComponent
-  },
-  {
-    path: 'details/:id',
-    component: ArtistDetailComponent
-  },
-  {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'artist'
+    redirectTo: 'artists'
+  },
+  {
+    path: 'artists',
+    loadChildren: () => import('./artists/artists.module').then((m) => m.ArtistsModule),
   },
   {
     path: '**',
     pathMatch: 'full',
-    component: ArtistsComponent
+    redirectTo: 'artists'
   }
 ];
 
@@ -33,4 +22,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

@@ -1,0 +1,17 @@
+<ng-container *ngIf="tracks; then tracksLoaded; else notTracksLoaded">
+</ng-container>
+
+<ng-template #tracksLoaded>
+  <div class="tracklist">
+    <h1>Top tracks</h1>
+    <ol>
+      <ng-container *ngFor="let track of tracks">
+        <app-track [track]="track"></app-track>
+      </ng-container>
+    </ol>
+  </div>
+</ng-template>
+
+<ng-template #notTracksLoaded>
+  <app-loading></app-loading>
+</ng-template>

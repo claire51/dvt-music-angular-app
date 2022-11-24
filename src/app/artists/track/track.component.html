@@ -1,0 +1,10 @@
+<ng-container *ngIf="track; then trackLoaded; else notTrackLoaded">
+</ng-container>
+
+<ng-template #trackLoaded>
+  <li><h4>{{track.title}}</h4><h5>{{track.duration | durationFormatter }}</h5></li>
+</ng-template>
+
+<ng-template #notTrackLoaded>
+  <app-loading></app-loading>
+</ng-template>
